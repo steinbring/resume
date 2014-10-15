@@ -14,25 +14,27 @@
 			Address
 		</dt>
 		<dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			4842 N Navajo Ave
-			Glendale, Wisconsin, 53217, USA
+			<span itemprop="streetAddress">4842 N Navajo Ave</span>,
+			<span itemprop="addressLocality">Glendale</span>,
+			<span itemprop="addressRegion">Wisconsin</span>, 
+			<span itemprop="postalCode">53217</span>
 		</dd>
 		<dt>
 			Phone
 		</dt>
-		<dd>
+		<dd itemprop="telephone">
 			414-465-8880
 		</dd>
 		<dt>
 			Email
 		</dt>
-		<dd>
+		<dd itemprop="email">
 			joe@steinbring.net
 		</dd>
 		<dt>
 			Website
 		</dt>
-		<dd>
+		<dd itemprop="url">
 			http://steinbring.net
 		</dd>
 	</dl>
@@ -44,9 +46,9 @@
     <dl>
     	<!-- START: Starkmedia -->
         <dt>Senior Application Developer</dt>
-        <dd>
+        <dd itemscope itemtype="http://schema.org/Organization">
             <dl>
-                <dt>Company:</dt><dd>Starkmedia</dd>
+                <dt>Company:</dt><dd itemprop="name">Starkmedia</dd>
                 <dt>Period:</dt><dd>
                     <time class="dtstart" datetime="2012-06-01">June 2012</time> -
                     <time class="dtend" datetime="2014-10-30">October 2014</time>
@@ -333,7 +335,6 @@
             </dl>
         </dd>
         <!-- END: STaRS Tech -->
-        <!-- more jobs here as dt-dd-pairs -->
     </dl>
 </section>
 <!-- END: Experience -->
