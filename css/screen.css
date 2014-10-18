@@ -30,6 +30,19 @@ a:hover, a:active{
 	width: 100%;
 }
 
+.technologies ul {
+	width:600px;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+
+.technologies li{
+	line-height:1.5em;
+	float:left;
+	display:inline;
+	width: 33.33%;
+}
+
 @media 
 	only screen and (max-width: 469px)  {
 	/* Single-column header */
