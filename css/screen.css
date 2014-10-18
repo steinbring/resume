@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	margin-top: 0px;
+}
+
+a:link, a:visited{
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	text-decoration: underline;
+}
+
+#contact #headshot {
+	display: none;
+}
+
+#contact h2 {
+	float:left;
+	width: 60%;
+}
+#contact dl {
+	float:right;
+	width: 40%;
+}
+
+#contact {
+	overflow: auto;
+	width: 100%;
+}
+
+@media 
+	only screen and (max-width: 469px)  {
+	/* Single-column header */
+	#contact dd { 
+		margin: 0px;
+		padding-bottom: 3px;
+		padding-top: 3px;
+	}
+
+	#contact h2 {
+		margin: 0px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#contact dl {
+		margin: 0px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#contact dd span:nth-child(2) {
+		display: none;
+	}
+
+	#contact dd span:nth-child(1) {
+		display: block;
+	}
+
+	#contact dt {
+		display: none;
+	}
+}
+
+@media 
+	only screen and (min-width: 470px) and (max-width: 760px)  {
+	/* Two-column header with no label*/
+	#contact dd { 
+		float:right;
+		padding-bottom: 3px;
+		padding-top: 3px;
+		width:80%;
+	}
+	#contact dd span:nth-child(2) {
+		display: none;
+	}
+
+	#contact dd span:nth-child(1) {
+		display: block;
+	}
+	#contact h2 {
+		float:left;
+		width: 50%;
+	}
+	#contact dl {
+		float:right;
+		width: 50%;
+	}
+
+	#contact dt {
+		display: none;
+	}
+}
+
+@media 
+	only screen and (min-width: 761px) and (max-width: 1049px)  {
+		/* Two-column header with label */
+	#contact dt {
+		float:left;
+		width:20%;
+	}
+	#contact dd {
+		float:right;
+		width:80%;
+		margin-top: -18px;
+	}
+	#contact span:nth-child(2) {
+		display: none;
+	}
+
+	#contact span:nth-child(1) {
+		display: block;
+	}
+}
+
+@media 
+	only screen and (min-width: 1050px)  {
+	/* Allow the address to be on a single line*/
+	#contact dt {
+		float:left;
+		width:20%;
+	}
+	#contact dd {
+		float:right;
+		width:80%;
+		margin-top: -18px;
+	}
+}

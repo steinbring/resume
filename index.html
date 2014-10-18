@@ -2,43 +2,51 @@
 <html>
 <head>
 	<title></title>
+
+	<link rel='stylesheet' href="css/screen.css" type='text/css' media='all'/>
+
 </head>
 <body>
+
 <!-- START: Contact -->
-<section itemscope itemtype="http://schema.org/Person">
+<section itemscope itemtype="http://schema.org/Person" id="contact">
+	<div id="headshot">
+		<img src="img/flipface.jpeg">
+	</div>
 	<h2 itemprop="name">
 		Joe Steinbring, MBA
 	</h2>
 	<dl>
 		<dt>
-			Address
+			Address:
 		</dt>
 		<dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			<span itemprop="streetAddress">4842 N Navajo Ave</span>,
-			<span itemprop="addressLocality">Glendale</span>,
-			<span itemprop="addressRegion">Wisconsin</span>, 
+			<span itemprop="streetAddress">4842 N Navajo Ave</span><span class="comma">,</span>
+			<span itemprop="addressLocality">Glendale</span><span class="comma">,</span>
+			<span itemprop="addressRegion">Wisconsin</span><span class="comma">,</span> 
 			<span itemprop="postalCode">53217</span>
 		</dd>
 		<dt>
-			Phone
+			Phone:
 		</dt>
 		<dd itemprop="telephone">
-			414-465-8880
+			<a href="tel:414-465-8880">414-465-8880</a>
 		</dd>
 		<dt>
-			Email
+			Email:
 		</dt>
 		<dd itemprop="email">
-			joe@steinbring.net
+			<a href="mailto:joe@steinbring.net">joe@steinbring.net</a>
 		</dd>
 		<dt>
-			Website
+			Website:
 		</dt>
 		<dd itemprop="url">
-			http://steinbring.net
+			<a href="http://steinbring.net">http://steinbring.net</a>
 		</dd>
 	</dl>
 </section>
+
 <!-- END: Contact -->
 <!-- START: Experience -->
 <section>
@@ -387,5 +395,6 @@
     </dl>
 </section>
 <!-- END: Affiliations & Activities -->
+
 </body>
 </html>
