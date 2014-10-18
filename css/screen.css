@@ -31,16 +31,26 @@ a:hover, a:active{
 }
 
 .technologies ul {
-	width:600px;
-	margin-bottom:20px;
-	overflow:hidden;
+	overflow: auto;
+	width: 100%;
 }
 
-.technologies li{
-	line-height:1.5em;
-	float:left;
-	display:inline;
-	width: 33.33%;
+.JobTitle {
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+.JobDescription dl dt:nth-child(1), .JobDescription dl dt:nth-child(3){
+	display: none;
+}
+
+.JobDescription dl dd:nth-child(2), .JobDescription dl dd:nth-child(4){
+	margin-left: 0px;
+}
+
+.JobDescription dl dd:nth-child(4){
+	margin-top: -18px;
+	margin-left: 400px;
 }
 
 @media 
@@ -75,6 +85,13 @@ a:hover, a:active{
 	#contact dt {
 		display: none;
 	}
+
+	.technologies li{
+		line-height:1.5em;
+		float:left;
+		display:inline;
+		width: 100%;
+	}
 }
 
 @media 
@@ -105,6 +122,13 @@ a:hover, a:active{
 	#contact dt {
 		display: none;
 	}
+
+	.technologies li{
+		line-height:1.5em;
+		float:left;
+		display:inline;
+		width: 50%;
+	}
 }
 
 @media 
@@ -126,6 +150,13 @@ a:hover, a:active{
 	#contact span:nth-child(1) {
 		display: block;
 	}
+
+	.technologies li{
+		line-height:1.5em;
+		float:left;
+		display:inline;
+		width: 33.33%;
+	}
 }
 
 @media 
@@ -139,5 +170,12 @@ a:hover, a:active{
 		float:right;
 		width:80%;
 		margin-top: -18px;
+	}
+
+	.technologies li{
+		line-height:1.5em;
+		float:left;
+		display:inline;
+		width: 25%;
 	}
 }
