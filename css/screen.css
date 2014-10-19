@@ -11,7 +11,7 @@ a:link, a:visited{
 a:hover, a:active{
 	text-decoration: underline;
 }
-
+/* START: Contact Section */
 #contact #headshot {
 	display: none;
 }
@@ -29,7 +29,8 @@ a:hover, a:active{
 	overflow: auto;
 	width: 100%;
 }
-
+/* END: Contact Section */
+/* START: Experience */
 .technologies ul {
 	overflow: auto;
 	width: 100%;
@@ -44,15 +45,16 @@ a:hover, a:active{
 	display: none;
 }
 
-.JobDescription dl dd:nth-child(2), .JobDescription dl dd:nth-child(4){
+.JobDescription .CompanyName, .JobDescription .EmploymentPeriod{
 	margin-left: 0px;
 }
 
-.JobDescription dl dd:nth-child(4){
-	margin-top: -18px;
-	margin-left: 400px;
+.JobTitle {
+	font-weight: bold;
+	font-size: 18px;
 }
 
+/* END: Experience */
 @media 
 	only screen and (max-width: 469px)  {
 	/* Single-column header */
@@ -92,6 +94,11 @@ a:hover, a:active{
 		display:inline;
 		width: 100%;
 	}
+
+	#experience h2{
+		text-align: center;
+		margin-top: 16px;
+	}
 }
 
 @media 
@@ -129,6 +136,25 @@ a:hover, a:active{
 		display:inline;
 		width: 50%;
 	}
+
+	.JobDescription dl .EmploymentPeriod{
+		margin-top: -23px;
+		margin-left: 56%;
+	}
+
+	.JobTitle, .CompanyName {
+		border-bottom: 1px black solid;
+		padding-bottom: 2px;
+		margin-bottom: 2px;
+		padding-top: 2px;
+	}
+	.DescriptionLabel {
+		padding-top: 2px;
+		margin-top: 2px;
+	}
+	.CompanyName .CompanyLocation {
+		display: none;
+	}
 }
 
 @media 
@@ -157,6 +183,22 @@ a:hover, a:active{
 		display:inline;
 		width: 33.33%;
 	}
+
+	.JobDescription dl .EmploymentPeriod{
+		margin-top: -23px;
+		margin-left: 58.5%;
+	}
+
+	.JobTitle, .CompanyName {
+		border-bottom: 1px black solid;
+		padding-bottom: 2px;
+		margin-bottom: 2px;
+		padding-top: 2px;
+	}
+	.DescriptionLabel {
+		padding-top: 2px;
+		margin-top: 2px;
+	}
 }
 
 @media 
@@ -177,5 +219,21 @@ a:hover, a:active{
 		float:left;
 		display:inline;
 		width: 25%;
+	}
+
+	.JobDescription dl .EmploymentPeriod{
+		margin-top: -23px;
+		margin-left: 58.5%;
+	}
+
+	.JobTitle, .CompanyName {
+		border-bottom: 1px black solid;
+		padding-bottom: 2px;
+		margin-bottom: 2px;
+		padding-top: 2px;
+	}
+	.DescriptionLabel {
+		padding-top: 2px;
+		margin-top: 2px;
 	}
 }
