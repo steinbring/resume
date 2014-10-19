@@ -73,6 +73,22 @@ a:hover, a:active{
 	margin-left: -80px;
 }
 /* END: Education */
+/* START: Affiliations */
+#affiliations dl {
+	margin-left: 40px;
+}
+.affiliation {
+	font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.AffiliationPeriod {
+	margin-left: -80px;
+}
+.AffiliationDescription dl dt:nth-child(1){
+	display: none;
+}
+/* END: Affiliatins */
 @media 
 	only screen and (max-width: 469px)  {
 	/* Single-column header */
